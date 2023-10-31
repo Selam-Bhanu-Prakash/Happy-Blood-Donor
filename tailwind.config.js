@@ -6,6 +6,9 @@ module.exports = {
           colors: {
               primary: '#1B73E8',
           },
+          backgroundImage: (theme) => ({
+            'gradient': 'linear-gradient(90deg, #EB3738, #6F3AFA)',
+          }),
       },
   },
   plugins: [],
