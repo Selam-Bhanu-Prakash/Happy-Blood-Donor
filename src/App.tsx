@@ -3,22 +3,229 @@ import "tailwindcss/tailwind.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
-import { Image } from "antd";
+import { Button, Card, Image } from "antd";
 import styled from "styled-components";
+import { WhatsAppOutlined } from "@ant-design/icons";
 
 const App = () => {
   return (
-    <div>
+    <div className="mb-12">
       <Header />
-      <div className="border-2 border-red-500 flex">
-        <div className="border-2 border-green-500 w-8/12">
-          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-purple-500">
-          Happy Donors Smile For Saves Lives, Just Ask
+      <div className=" flex">
+        <div className="w-7/12 justify-center items-center p-auto m-auto">
+          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-purple-500 mb-6">
+            Happy Donors Smile For Saves Lives, Just Ask
           </h1>
+          <p className="text-gray-600">
+            A simple smile accompanies the profound impact of saving lives
+            through blood donation—ask any happy donor, and they'll tell you
+            it's a rewarding journey of compassion and community
+          </p>
+          <div>
+            <Button
+              type="primary"
+              className="ml-2 bg-red-500 rounded-2xl hover:!bg-red-900 px-12 !items-center justify-center !pb-7"
+            >
+              <div className="flex">
+                <div className="mr-4">
+                  <Image
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Blooddrop.svg?alt=media&token=ba793723-d981-430a-8101-27745e8f0c9e&_gl=1*2osc2j*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NTk0NC4zLjAuMA.."
+                    preview={false}
+                  />
+                </div>
+                <div className="-pb-2">Be a Donor</div>
+              </div>
+            </Button>
+            <Button
+              type="primary"
+              className="ml-2 bg-red-500 rounded-2xl hover:!bg-red-900 px-12 !items-center justify-center !pb-7"
+            >
+              <div className="flex">
+                <div className="mr-4">
+                  <Image
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Blooddrop.svg?alt=media&token=ba793723-d981-430a-8101-27745e8f0c9e&_gl=1*2osc2j*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NTk0NC4zLjAuMA.."
+                    preview={false}
+                  />
+                </div>
+                <div className="-pb-2">Find a Donor</div>
+              </div>
+            </Button>
+          </div>
         </div>
 
-        <div className="border-2 border-blue-500 w-4/12">
+        <div className="mt-20 w-4/12">
           <Image src="./HomeSide1.png" preview={false} />
+        </div>
+      </div>
+      <div className="mt-6 py-12">
+        <div className=" p-auto m-auto  w-8/12">
+          <div className="mx-[38%] mb-8">
+            <p className="font-bold text-2xl">Partner & Friend</p>
+          </div>
+          <div className="flex gap-[30px]">
+            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Apollo.png?alt=media&token=329d9adf-4b30-4c12-ba1c-5f7a293ae220&_gl=1*12vxeu0*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzE0NC42MC4wLjA." preview={false} />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Vijay.png?alt=media&token=87d88693-da04-46c2-9a61-1a09214c717f&_gl=1*1ybx8d4*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQzOC42MC4wLjA." preview={false} />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Sankara.png?alt=media&token=2f461ea2-9831-4362-aa84-c5bc486b8aa3&_gl=1*176pfk1*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQ3OC4yMC4wLjA." preview={false} />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Mayapada.png?alt=media&token=de3a3149-d31e-480a-86ba-20240fb90fd0&_gl=1*t94dai*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzgwNi41Mi4wLjA." preview={false} />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Medway.png?alt=media&token=37fd576d-c0f4-4322-8335-93e2f5d8be54&_gl=1*bl1o35*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzU0OS4zNi4wLjA." preview={false} />
+          </div>
+        </div>
+      </div>
+      <div className=" py-12">
+        <div className=" p-auto m-auto  w-8/12">
+          <div className="mx-[38%] mb-8">
+            <p className="font-bold text-2xl">
+              Why Donate <span className="text-red-500">Blood ?</span>
+            </p>
+          </div>
+          <div className="flex gap-[20px]">
+            <p className="text-gray-600 w-9/12 m-auto p-auto text-justify">
+              Donating blood saves lives by providing a critical resource for
+              medical treatments, surgeries, and emergencies. A single donation
+              can impact multiple patients, making it a simple yet powerful way
+              to contribute to the well-being of others
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" py-12">
+        <div className=" p-auto m-auto  w-8/12">
+          <div className=" flex gap-[30px] p-auto m-auto">
+            <Card
+              hoverable
+              style={{ width: 346 }}
+              className="rounded-2xl"
+              cover={<img src="./Donor.png" />}
+            >
+              <div>
+                <p className="text-xl font-bold mb-2">Become a Donor</p>
+                <p className="text-gray-500 mb-4 text-justify">
+                  Become a blood donor and be the hero someone desperately
+                  needs. Your donation can save lives.{" "}
+                </p>
+                <Button
+                  type="primary"
+                  className="rounded-2xl bg-red-500 hover:!bg-red-700 px-12 !items-center justify-center !pb-7"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              style={{ width: 346 }}
+              className="rounded-2xl"
+              cover={<img src="./Donor.png" />}
+            >
+              <div>
+                <p className="text-xl font-bold mb-2">Find a donor</p>
+                <p className="text-gray-500 mb-4 text-justify">
+                  We urgently need a blood donor! Your willingness to donate can
+                  be a lifeline for someone in a critical situation.{" "}
+                </p>
+                <Button
+                  type="primary"
+                  className="rounded-2xl bg-red-500 hover:!bg-red-700 px-12 !items-center justify-center !pb-7"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              style={{ width: 346 }}
+              className="rounded-2xl"
+              cover={<img src="./Donor.png" />}
+            >
+              <div>
+                <p className="text-xl font-bold mb-2">Blood Drives</p>
+                <p className="text-gray-500 mb-4 text-justify">
+                  Be a part of our upcoming blood drive and contribute to saving
+                  lives. Your donation can make a significant impact.{" "}
+                </p>
+                <Button
+                  type="primary"
+                  className="rounded-2xl bg-red-500 hover:!bg-red-700 px-12 !items-center justify-center !pb-7"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+      <div className=" py-12">
+        <div className="flex p-auto m-auto w-10/12">
+          <div className="w-1/2">
+            <Image
+              src="./HomeSide1.png"
+              preview={false}
+              className="px-8 rounded-2xl drop-shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col gap-[10px] w-1/2">
+            <div>
+              <p className="text-xl font-bold">
+                Who we <span className="text-red-500">Are</span> ?
+              </p>
+              <p className="text-justify text-gray-500">
+                Collaborate with healthcare professionals, government agencies,
+                non-profit organizations, and local communities to strengthen
+                the overall healthcare system.
+              </p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">Our Mission</p>
+              <p className="text-justify  text-gray-500">
+                To save lives by ensuring a safe and ample blood supply for
+                patients in need, fostering community engagement, and promoting
+                the importance of regular blood donation.
+              </p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">Our Vision</p>
+              <p className="text-justify text-gray-500">
+                To be a leading force in promoting a culture of voluntary blood
+                donation, ensuring a robust and safe blood supply system, and
+                ultimately contributing to a healthier and more resilient
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" py-12">
+        <div className="flex p-auto m-auto w-10/12">
+          <div className=" w-1/2">
+            <div className="border-2">
+              <p className="text-xl font-bold">
+                How much shortage of blood & How we usage of blood
+              </p>
+              <p className="text-justify text-gray-500 mb-6">
+                To solve this shortage, we are raising awareness and urging
+                individuals to donate blood: “All types are needed now,
+                especially types O positive and O negative, as well as platelet
+                donations, to help reverse this national blood crisis,” wrote
+                the American Red Cross in a press release.
+              </p>
+              <Button
+                type="primary"
+                className="rounded-2xl bg-red-500 hover:!bg-red-700 px-12 !items-center justify-center !pb-7"
+              >
+                <span>
+                  <WhatsAppOutlined className="text-white mr-2" />
+                </span>
+                Learn More
+              </Button>
+            </div>
+          </div>
+          <div className="w-1/2 justify-end flex">
+            <Image
+              src="./HomeSide1.png"
+              preview={false}
+              className="rounded-2xl drop-shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </div>

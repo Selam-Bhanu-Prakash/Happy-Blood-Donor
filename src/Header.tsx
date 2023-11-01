@@ -7,10 +7,10 @@ import { Button } from 'antd';
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary !w-full !bg-white -pr-0">
+    <Navbar expand="lg" className="bg-body-tertiary !w-full !bg-white -pr-0" fixed="top">
     <Container className='!-mx-0 flex justify-between items-center !w-screen'>
       <div className=' w-[50%] ml-8'>
-        <Navbar.Brand href="#home" className='font-bold'>Happy Blood Donor</Navbar.Brand>
+        <Navbar.Brand href="#home" className='font-bold !text-red-500'>Happy Blood Donor</Navbar.Brand>
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
