@@ -21,7 +21,7 @@ const App = () => {
             through blood donation—ask any happy donor, and they'll tell you
             it's a rewarding journey of compassion and community
           </p>
-          <div>
+          <div className="flex gap-[50px]">
             <Button
               type="primary"
               className="ml-2 bg-red-500 rounded-2xl hover:!bg-red-900 px-12 !items-center justify-center !pb-7"
@@ -63,11 +63,26 @@ const App = () => {
             <p className="font-bold text-2xl">Partner & Friend</p>
           </div>
           <div className="flex gap-[30px]">
-            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Apollo.png?alt=media&token=329d9adf-4b30-4c12-ba1c-5f7a293ae220&_gl=1*12vxeu0*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzE0NC42MC4wLjA." preview={false} />
-            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Vijay.png?alt=media&token=87d88693-da04-46c2-9a61-1a09214c717f&_gl=1*1ybx8d4*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQzOC42MC4wLjA." preview={false} />
-            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Sankara.png?alt=media&token=2f461ea2-9831-4362-aa84-c5bc486b8aa3&_gl=1*176pfk1*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQ3OC4yMC4wLjA." preview={false} />
-            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Mayapada.png?alt=media&token=de3a3149-d31e-480a-86ba-20240fb90fd0&_gl=1*t94dai*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzgwNi41Mi4wLjA." preview={false} />
-            <Image src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Medway.png?alt=media&token=37fd576d-c0f4-4322-8335-93e2f5d8be54&_gl=1*bl1o35*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzU0OS4zNi4wLjA." preview={false} />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Apollo.png?alt=media&token=329d9adf-4b30-4c12-ba1c-5f7a293ae220&_gl=1*12vxeu0*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzE0NC42MC4wLjA."
+              preview={false}
+            />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Vijay.png?alt=media&token=87d88693-da04-46c2-9a61-1a09214c717f&_gl=1*1ybx8d4*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQzOC42MC4wLjA."
+              preview={false}
+            />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Sankara.png?alt=media&token=2f461ea2-9831-4362-aa84-c5bc486b8aa3&_gl=1*176pfk1*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzQ3OC4yMC4wLjA."
+              preview={false}
+            />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Mayapada.png?alt=media&token=de3a3149-d31e-480a-86ba-20240fb90fd0&_gl=1*t94dai*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzgwNi41Mi4wLjA."
+              preview={false}
+            />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Medway.png?alt=media&token=37fd576d-c0f4-4322-8335-93e2f5d8be54&_gl=1*bl1o35*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg0NTUzMS40LjEuMTY5ODg0NzU0OS4zNi4wLjA."
+              preview={false}
+            />
           </div>
         </div>
       </div>
@@ -95,7 +110,14 @@ const App = () => {
               hoverable
               style={{ width: 346 }}
               className="rounded-2xl"
-              cover={<img src="./Donor.png" />}
+              cover={
+                <div className="pt-6 pl-6 !w-[70%]">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/RedBlood.png?alt=media&token=c2718b6f-92c6-4577-b382-b8167b38d23f&_gl=1*1ujnnic*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg1MjU5My41LjEuMTY5ODg1MjcxMC42MC4wLjA."
+                    className="w-16 h-16"
+                  />
+                </div>
+              }
             >
               <div>
                 <p className="text-xl font-bold mb-2">Become a Donor</p>
@@ -115,7 +137,14 @@ const App = () => {
               hoverable
               style={{ width: 346 }}
               className="rounded-2xl"
-              cover={<img src="./Donor.png" />}
+              cover={
+                <div className="pt-6 pl-6 !w-[70%]">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/GreenHeart.png?alt=media&token=71b0ecaf-1c8a-465c-ab3e-588495562541&_gl=1*1xd3rl8*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg1MjU5My41LjEuMTY5ODg1MzE1My42MC4wLjA."
+                    className="w-16 h-16"
+                  />
+                </div>
+              }
             >
               <div>
                 <p className="text-xl font-bold mb-2">Find a donor</p>
@@ -135,7 +164,14 @@ const App = () => {
               hoverable
               style={{ width: 346 }}
               className="rounded-2xl"
-              cover={<img src="./Donor.png" />}
+              cover={
+                <div className="pt-6 pl-6 !w-[70%]">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Injection.png?alt=media&token=3c90960d-1198-4c68-87d4-c9bdbcc923e4&_gl=1*s18b7t*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg1MjU5My41LjEuMTY5ODg1MzMzMS42MC4wLjA."
+                    className="w-16 h-16"
+                  />
+                </div>
+              }
             >
               <div>
                 <p className="text-xl font-bold mb-2">Blood Drives</p>
@@ -158,7 +194,7 @@ const App = () => {
         <div className="flex p-auto m-auto w-10/12">
           <div className="w-1/2">
             <Image
-              src="./HomeSide1.png"
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Side1.png?alt=media&token=871617fe-e10d-4475-ade5-f76d8b0efcae&_gl=1*1b0rmh0*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg1MjU5My41LjEuMTY5ODg1MzYyMy40Mi4wLjA."
               preview={false}
               className="px-8 rounded-2xl drop-shadow-lg"
             />
@@ -195,9 +231,9 @@ const App = () => {
         </div>
       </div>
       <div className=" py-12">
-        <div className="flex p-auto m-auto w-10/12">
+        <div className="flex p-auto m-auto w-8/12">
           <div className=" w-1/2">
-            <div className="border-2">
+            <div>
               <p className="text-xl font-bold">
                 How much shortage of blood & How we usage of blood
               </p>
@@ -221,9 +257,9 @@ const App = () => {
           </div>
           <div className="w-1/2 justify-end flex">
             <Image
-              src="./HomeSide1.png"
+              src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/Side2.png?alt=media&token=8fe66d85-ec93-4981-9ac7-2e186448da9e&_gl=1*1pz1jj4*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODg1MjU5My41LjEuMTY5ODg1Mzc0MS42MC4wLjA."
               preview={false}
-              className="rounded-2xl drop-shadow-lg"
+              className="rounded-2xl drop-shadow-lg w-[518px] h-[510px]"
             />
           </div>
         </div>
