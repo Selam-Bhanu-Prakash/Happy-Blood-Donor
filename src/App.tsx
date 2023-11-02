@@ -3,9 +3,9 @@ import "tailwindcss/tailwind.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
-import { Button, Card, Image } from "antd";
+import { Avatar, Button, Card, Image, Rate } from "antd";
 import styled from "styled-components";
-import { WhatsAppOutlined } from "@ant-design/icons";
+import { UserOutlined, WhatsAppOutlined } from "@ant-design/icons";
 
 const App = () => {
   return (
@@ -261,6 +261,77 @@ const App = () => {
               preview={false}
               className="rounded-2xl drop-shadow-lg w-[518px] h-[510px]"
             />
+          </div>
+        </div>
+      </div>
+      <div className="py-12">
+        <div className="border-2 w-10/12 p-auto m-auto rounded-2xl py-6 bg-gradient-to-r from-red-700 via-red-400 to-violet-400">
+          <div className="p-auto m-auto w-3/12 text-2xl text-white font-bold">
+            Become a blood donator Be a life Line , Donate Blood
+          </div>
+          <div className="p-auto m-auto w-6/12 text-white mt-4 text-center">
+            Any healthy adult, both male and female, can donate blood. Men can
+            donate safely once in every three months while women can donate
+            every four months. Donor should be in the age group of 18 to 65
+            years
+          </div>
+          <div className="p-auto m-auto w-5/12 text-2xl text-white font-bold flex gap-[20px] mt-4 justify-center">
+            <Button className="bg-transparent rounded-2xl text-white border-2 border-white hover:!bg-transparent hover:!border-white hover:text-white px-4 !items-center justify-center !pb-7">
+              <div className="flex">
+                <div className="mr-2">
+                  <Image
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/calendar.svg?alt=media&token=2172fbc3-c118-4d66-b6b5-6d3ee18ba041&_gl=1*gpc03v*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODkzNDc1MS42LjEuMTY5ODkzODEyNC42MC4wLjA."
+                    preview={false}
+                  />
+                </div>
+                <div className="-pb-2">Check Availability</div>
+              </div>
+            </Button>
+
+            <Button className="bg-white rounded-2xl text-red-500 border-2 border-white hover:!bg-white hover:!border-white hover:!text-red-500 px-4 !items-center justify-center !pb-7">
+              <div className="flex">
+                <div className="mr-2">
+                  <Image
+                    src="https://firebasestorage.googleapis.com/v0/b/happy-blood-donor.appspot.com/o/redwhatsapp.svg?alt=media&token=f359357f-ff33-44e3-abd9-d63a6c023846&_gl=1*1tydorh*_ga*MTY1MDQ3MzExMy4xNjgxODIzMTYw*_ga_CW55HF8NVT*MTY5ODkzNDc1MS42LjEuMTY5ODkzODM2Ni42MC4wLjA."
+                    preview={false}
+                  />
+                </div>
+                <div className="-pb-2 font-semibold">Contact us</div>
+              </div>
+            </Button>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div className="py-12">
+        <div className="w-10/12 p-auto m-auto py-6 ">
+          <div className="text-center font-bold">
+            <p className="text-red-500 text-2xl">Testimonials</p>
+          </div>
+          <div className="text-center font-bold mt-4">
+            <p className="text-2xl">What our Customer Says</p>
+          </div>
+          <div className="flex px-12">
+              <div className="w-1/2">
+              <Card className="m-4 rounded-2xl" hoverable>
+                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+              </Card>
+              <Card className="m-4 rounded-2xl" hoverable>
+                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+              </Card>
+              </div>
+              <div  className="w-1/2" >
+              <Card className="m-4 rounded-2xl" hoverable>
+                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+              </Card>
+              <Card className="m-4 rounded-2xl" hoverable>
+                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+              </Card>
+              </div>
           </div>
         </div>
       </div>
