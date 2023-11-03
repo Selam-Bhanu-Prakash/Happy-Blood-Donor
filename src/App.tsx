@@ -6,10 +6,11 @@ import Header from "./Header";
 import { Avatar, Button, Card, Image, Rate } from "antd";
 import styled from "styled-components";
 import { UserOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import Footer from "./Footer";
 
 const App = () => {
   return (
-    <div className="mb-12">
+    <div>
       <Header />
       <div className=" flex">
         <div className="w-7/12 justify-center items-center p-auto m-auto">
@@ -312,28 +313,71 @@ const App = () => {
             <p className="text-2xl">What our Customer Says</p>
           </div>
           <div className="flex px-12">
-              <div className="w-1/2">
+            <div className="w-1/2">
               <Card className="m-4 rounded-2xl" hoverable>
-                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+                <p className="text-gray-500">
+                  Click edit button to change this text. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                  ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <div className="flex gap-[10px]">
+                  <Avatar
+                    style={{ backgroundColor: "#87d068" }}
+                    icon={<UserOutlined />}
+                  />
+                  <Rate allowHalf defaultValue={5} className="mt-1" />
+                </div>
               </Card>
               <Card className="m-4 rounded-2xl" hoverable>
-                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+                <p className="text-gray-500">
+                  Click edit button to change this text. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                  ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <div className="flex gap-[10px]">
+                  <Avatar
+                    style={{ backgroundColor: "#87d068" }}
+                    icon={<UserOutlined />}
+                  />
+                  <Rate allowHalf defaultValue={5} className="mt-1" />
+                </div>
               </Card>
-              </div>
-              <div  className="w-1/2" >
+            </div>
+            <div className="w-1/2">
               <Card className="m-4 rounded-2xl" hoverable>
-                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+                <p className="text-gray-500">
+                  Click edit button to change this text. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                  ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <div className="flex gap-[10px]">
+                  <Avatar
+                    style={{ backgroundColor: "#87d068" }}
+                    icon={<UserOutlined />}
+                  />
+                  <Rate allowHalf defaultValue={5} className="mt-1" />
+                </div>
               </Card>
               <Card className="m-4 rounded-2xl" hoverable>
-                <p className="text-gray-500">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <div className="flex gap-[10px]"><Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} /><Rate allowHalf defaultValue={5} className="mt-1" /></div>
+                <p className="text-gray-500">
+                  Click edit button to change this text. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                  ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <div className="flex gap-[10px]">
+                  <Avatar
+                    style={{ backgroundColor: "#87d068" }}
+                    icon={<UserOutlined />}
+                  />
+                  <Rate allowHalf defaultValue={5} className="mt-1" />
+                </div>
               </Card>
-              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="pt-12 bg-gray-800">
+        <Footer />
       </div>
     </div>
   );
