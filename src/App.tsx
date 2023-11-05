@@ -7,11 +7,13 @@ import { Avatar, Button, Card, Image, Rate } from "antd";
 import styled from "styled-components";
 import { UserOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import Footer from "./Footer";
+import RegisterDonor from "./RegisterDonor";
+import RegisterOrganization from "./RegisterOrganization";
 
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <div className=" flex">
         <div className="w-7/12 justify-center items-center p-auto m-auto">
           <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-purple-500 mb-6">
@@ -378,7 +380,9 @@ const App = () => {
       </div>
       <div className="pt-12 bg-gray-800">
         <Footer />
-      </div>
+      </div> */}
+      {/* <RegisterDonor/> */}
+      <RegisterOrganization />
     </div>
   );
 };
