@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import RegisterDonor from "./RegisterDonor";
 import RegisterOrganization from "./RegisterOrganization";
 import { Link } from "react-router-dom";
+import LandingSearch from './LandingSearch';
 
 const LandingPage = () => {
   return (
@@ -40,7 +41,7 @@ const LandingPage = () => {
               </div>
             </Button>
           </Link>
-          <Link to="registerorganization">
+          <Link to="finddonor">
           <Button
               type="primary"
               className="ml-2 bg-red-500 rounded-2xl hover:!bg-red-900 px-12 !items-center justify-center !pb-7"
@@ -65,7 +66,7 @@ const LandingPage = () => {
           <Image src="./HomeSide1.png" preview={false} />
         </div>
       </div>
-      <div className="mt-6 py-12">
+      {/* <div className="mt-6 py-12">
         <div className=" p-auto m-auto  w-8/12">
           <div className="mx-[38%] mb-8">
             <p className="font-bold text-2xl">Partner & Friend</p>
@@ -93,7 +94,8 @@ const LandingPage = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+      <LandingSearch />
       <div className=" py-12">
         <div className=" p-auto m-auto  w-8/12">
           <div className="mx-[38%] mb-8">

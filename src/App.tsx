@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./LandingPage";
 import RegisterDonor from "./RegisterDonor";
 import RegisterOrganization from "./RegisterOrganization";
+import FindDonor from "./FindDonor";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={ <LandingPage/> } />
         <Route path="/registerdonor" element={ <RegisterDonor/> } />
         <Route path="/registerorganization" element={ <RegisterOrganization/> } />
+        <Route path="/finddonor" element={ <FindDonor/> } />
       </Routes>
     </div>
   );
